@@ -1,14 +1,19 @@
-import React from "react";
+const Home = () => {
 
-function Button() {
-    function handleClick() {
-        console.log('button got clicked');
+    const handleClick = () => {
+        console.log('Got clicked!');
     }
 
+    const handleClickAgain = (name) => {
+        console.log('hello' + name);
+    }
     return (
-        <button onClick={handleClick}>
-            Click Me!
-        </button>
-    )
+        <div className="home">
+            <h2>Homepage!</h2>
+            <button onClick={handleClick}> Click me!</button>
+            <button onClick={() => handleClickAgain(' mzm ')}> Click me again!</button>
+        </div>
+    );
 }
-export default home.jsx;
+
+export default Home
