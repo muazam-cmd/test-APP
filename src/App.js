@@ -1,11 +1,13 @@
 import Navbar from './Navbar';
 import Home from './home';
 
+
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="Container">
+      <div className="">
+        <br />
         <Home />
       </div>
     </div>
